@@ -1,56 +1,6 @@
-// import express from 'express';
-// import cors from 'cors';
-// import bcrypt from 'bcrypt';
-// import mysql from 'mysql2/promise';
-// import jwt from 'jsonwebtoken';
-// import dotenv from 'dotenv';
-// import pool from '../config/db.js'
-// import Validate from '../Middlewares/user.js'
-// dotenv.config();
-// const app = express();
-// const port = 5000;
-// const router=express.Router();
 const GenerateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '1d' });
 };
-
-// // // MySQL pool setup
-// // const pool = mysql.createPool({
-// //   host: 'localhost',
-// //   user: 'root',
-// //   password: 'sravanthi95',
-// //   database: 'signup_db',
-// // });
-
-// //Login Route
-// router.post('/login',Validate, async (req, res) => {
-//   try {
-//     const { email, password } = req.body;
-//     const [rows] = await pool.query('SELECT * FROM user WHERE email = ?', [email]);
-//     const user = rows[0];
-//     const token = GenerateToken(user.id);
-//     res.status(200).json({ message: 'Logged in successfully', userId: user.id, token });
-
-//   } catch (err) {
-//     console.error(err);
-//     res.status(500).json({ error: 'Server error' });
-//   }
-// });
-
-
-
-// export default router;
-
-
-
-
-
-
-
-
-
-
-
 import express from 'express';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
