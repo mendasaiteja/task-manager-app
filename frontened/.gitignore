@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+dist-ssr/
+.vite/
+
+# Local environment variables
+.env
+*.local
+
+# OS/system files
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: allow specific VS Code settings
+!.vscode/extensions.json

@@ -1,0 +1,29 @@
+/* App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  background-color: #0d6efd;
+  color: white;
+}
+.task-text {
+  word-break: break-word;
+  white-space: pre-wrap;
+}
