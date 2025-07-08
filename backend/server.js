@@ -8,16 +8,16 @@ import dotenv from 'dotenv';
 import UserRoute from './Routes/auth.js';
 import TasksRouter from './Routes/tasks.js';
 
-dotenv.config(); // ✅ Make sure to enable this
+dotenv.config(); 
 
 const app = express();
 const port = 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // ✅ correct usage of urlencoded
+app.use(express.urlencoded({ extended: true })); 
 
-// Mount routes
+
 app.use('/', UserRoute);
 app.use('/tasks', TasksRouter);
 app.listen(port, () => {
