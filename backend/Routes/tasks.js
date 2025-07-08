@@ -50,7 +50,6 @@ router.delete('/:id', authenticate, async (req, res) => {
     res.status(500).json({ message: 'Failed to delete task' });
   }
 });
-// Assuming you're using Express and have body-parser or express.json() middleware
 
 router.put('/edit', authenticate, async (req, res) => {
   const { id, task, date, completed } = req.body;
